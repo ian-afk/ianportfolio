@@ -80,6 +80,11 @@ export default function Skills() {
       color: "#1572B6",
     },
     {
+      title: "Tailwind CSS",
+      icon: <SiTailwindcss color="#38BDF8" />,
+      color: "#38BDF8",
+    },
+    {
       title: "MUI",
       icon: <SiMui color="#0081CB" />,
       color: "#0081CB",
@@ -88,6 +93,11 @@ export default function Skills() {
       title: "Ant Design",
       icon: <SiAntdesign color="#0170FE" />,
       color: "#0170FE",
+    },
+    {
+      title: "Git/Github",
+      icon: <SiGithub color="#000" />,
+      color: "#000",
     },
   ];
 
@@ -106,7 +116,7 @@ export default function Skills() {
         <div className="flex flex-col justify-center items-center space-y-8">
           <ul className="flex gap-6 flex-wrap">
             {skills
-              .filter((item, index) => index <= 3)
+              .filter((_, index) => index <= 3)
               .map((item) => (
                 <li
                   key={item.title}
@@ -121,7 +131,7 @@ export default function Skills() {
           </ul>
           <ul className="flex gap-6 flex-wrap">
             {skills
-              .filter((item, index) => index > 3 && index < 10)
+              .filter((_, index) => index > 3 && index < 10)
               .map((item) => (
                 <li
                   key={item.title}
@@ -136,7 +146,7 @@ export default function Skills() {
           </ul>
           <ul className="flex gap-6 flex-wrap">
             {skills
-              .filter((item, index) => index > 9)
+              .filter((_, index) => index > 9)
               .map((item) => (
                 <li
                   key={item.title}
