@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_API_URL = "http://localhost:8000";
+const BASE_API_URL = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
 
 type addNewsProp = {
   name: string;
