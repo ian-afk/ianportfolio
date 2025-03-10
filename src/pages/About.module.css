@@ -1,0 +1,21 @@
+.heading-primary-main {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+
+  animation-name: movesInLeft;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+  margin-top: 12px;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 10px;
+
+  animation-name: movesInRight;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}

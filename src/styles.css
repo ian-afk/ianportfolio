@@ -1,0 +1,33 @@
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes move-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes move-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-move-in-left {
+    animation: move-in-left 0.7s ease-out forwards;
+  }
+
+  .animate-move-in-right {
+    animation: move-in-right 0.7s ease-out forwards;
+  }
+}
