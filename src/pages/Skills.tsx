@@ -102,19 +102,19 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="mx-40 min-h-[60vh]">
+    <section id="skills" className="md:mx-40 min-h-[60vh]">
       <div className="text-center font-bold text-2xl my-4">
         <h2 className="underline underline-offset-8 text-[#2d64b0]">Skills</h2>
       </div>
-      <div className="flex justify-evenly mt-6 gap-7">
+      <div className="md:flex justify-evenly mt-6 gap-7">
         <div className="my-4">
-          <p className="max-w-[40ch] text-end font-semibold text-2xl">
+          <p className="md:max-w-[40ch] md:text-end font-semibold text-2xl flex justify-center items-center">
             These are my technical/programming skills that I have experienced
             with from my previous jobs
           </p>
         </div>
         <div className="flex flex-col justify-center items-center space-y-8">
-          <ul className="flex gap-6 flex-wrap">
+          <ul className="flex gap-6 flex-wrap justify-center">
             {skills
               .filter((_, index) => index <= 3)
               .map((item) => (
@@ -125,11 +125,11 @@ export default function Skills() {
                   <span className="absolute bottom-12 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
                     {item.title}
                   </span>
-                  <span className="text-7xl">{item.icon}</span>
+                  <span className="md:text-7xl text-4xl">{item.icon}</span>
                 </li>
               ))}
           </ul>
-          <ul className="flex gap-6 flex-wrap">
+          <ul className="flex gap-6 flex-wrap justify-center">
             {skills
               .filter((_, index) => index > 3 && index < 10)
               .map((item) => (
@@ -140,11 +140,11 @@ export default function Skills() {
                   <span className="absolute bottom-12 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
                     {item.title}
                   </span>
-                  <span className="text-7xl">{item.icon}</span>
+                  <span className="md:text-7xl text-4xl">{item.icon}</span>
                 </li>
               ))}
           </ul>
-          <ul className="flex gap-6 flex-wrap">
+          <ul className="flex gap-6 flex-wrap justify-center">
             {skills
               .filter((_, index) => index > 9)
               .map((item) => (
@@ -155,7 +155,7 @@ export default function Skills() {
                   <span className="absolute bottom-12 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
                     {item.title}
                   </span>
-                  <span className="text-7xl">{item.icon}</span>
+                  <span className="md:text-7xl text-4xl">{item.icon}</span>
                 </li>
               ))}
           </ul>
