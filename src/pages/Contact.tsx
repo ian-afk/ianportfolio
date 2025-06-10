@@ -12,9 +12,13 @@ export default function Contact() {
       <div className="text-center font-bold text-2xl my-4">
         <h2 className="underline underline-offset-8 text-[#2d64b0]">Contact</h2>
       </div>
-      <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4">
-        <div className="">
-          <img src="./contact-us.jpg" alt="" />
+      <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4 md:flex justify-center">
+        <div className="hidden md:block">
+          <img
+            className="h-72 w-full md:h-full md:w-48"
+            src="./contact-us.jpg"
+            alt="Contact Us"
+          />
         </div>
         <div>
           <Email showModal={setShowModal} custName={setCustName} />

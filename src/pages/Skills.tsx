@@ -106,7 +106,7 @@ export default function Skills() {
       <div className="text-center font-bold text-2xl my-4">
         <h2 className="underline underline-offset-8 text-[#2d64b0]">Skills</h2>
       </div>
-      <div className="md:flex justify-evenly mt-6 gap-7">
+      <div className="lg:flex justify-evenly mt-6 gap-7">
         <div className="my-4">
           <p className="md:max-w-[40ch] md:text-end font-semibold text-2xl flex justify-center items-center">
             These are my technical/programming skills that I have experienced

@@ -1,7 +1,6 @@
 export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
-  console.log(year);
   return (
     <footer className="h-32 bg-sky-950 text-white flex justify-center items-center">
       <div className="text-center">
