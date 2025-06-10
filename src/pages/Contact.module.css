@@ -1,0 +1,24 @@
+.customHide {
+  display: block;
+}
+
+.hideLabel {
+  display: block;
+}
+
+.flexCenter {
+  display: block;
+}
+@media (max-width: 999px) {
+  .customHide {
+    display: none;
+  }
+  .hideLabel {
+    display: none;
+  }
+  .flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

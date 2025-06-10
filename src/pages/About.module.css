@@ -19,3 +19,30 @@
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
 }
+.showMore {
+  display: block;
+}
+
+.showMore2 {
+  display: block;
+}
+.hideShowMore {
+  display: none;
+}
+@media (max-width: 999px) {
+  .showMore {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .showMore2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .hideShowMore {
+    display: block;
+  }
+}

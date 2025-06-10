@@ -3,6 +3,7 @@ import { useState } from "react";
 import { sendEmail } from "../utils/api";
 import { CoreCustomToast } from "../utils/CustomToast";
 import { filterObjectValue } from "../utils/emailValidation";
+import styles from "./Email.module.css";
 
 interface EmailData {
   name: string;
@@ -67,9 +68,12 @@ export function Email({ showModal, custName }: EmailProp) {
   };
   return (
     <>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="flex space-y-2">
-          <label htmlFor="name" className="w-24 font-semibold">
+      <form onSubmit={handleSubmit} className={`space-y-4`}>
+        <div className={`${styles.centerForm} space-y-2`}>
+          <label
+            htmlFor="name"
+            className={`${styles.hideLabel} w-24 font-semibold md:block`}
+          >
             Name
           </label>
           <input
@@ -83,8 +87,11 @@ export function Email({ showModal, custName }: EmailProp) {
             value={inputs.name}
           />
         </div>
-        <div className="flex space-y-2">
-          <label htmlFor="email" className="w-24 font-semibold">
+        <div className={`${styles.centerForm} space-y-2`}>
+          <label
+            htmlFor="email"
+            className={`${styles.hideLabel} w-24 font-semibold`}
+          >
             Email
           </label>
           <input
@@ -99,8 +106,11 @@ export function Email({ showModal, custName }: EmailProp) {
           />
         </div>
 
-        <div className="flex space-y-2">
-          <label htmlFor="message" className="w-24 font-semibold">
+        <div className={`${styles.centerForm} space-y-2`}>
+          <label
+            htmlFor="message"
+            className={`${styles.hideLabel} w-24 font-semibold`}
+          >
             Message
           </label>
           <textarea
@@ -114,13 +124,15 @@ export function Email({ showModal, custName }: EmailProp) {
             placeholder="Leave me a message"
           ></textarea>
         </div>
-        <button
-          type="submit"
-          disabled={loading}
-          className="border-1 rounded-xl px-2 py-1 text-white bg-[#2d64b0] w-24 mt-4"
-        >
-          {loading ? "Sending..." : "Send"}
-        </button>
+        <div className="ml-24">
+          <button
+            type="submit"
+            disabled={loading}
+            className="border-1 rounded-xl px-2 py-1 text-white bg-[#2d64b0] w-24 mt-4"
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
+        </div>
       </form>
     </>
   );

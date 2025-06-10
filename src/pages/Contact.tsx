@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Email from "../components/Email";
 import Modal from "../components/Modal";
+import styles from "./Contact.module.css";
 
 export default function Contact() {
   const [showModal, setShowModal] = useState(false);
@@ -13,14 +14,15 @@ export default function Contact() {
         <h2 className="underline underline-offset-8 text-[#2d64b0]">Contact</h2>
       </div>
       <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4 md:flex justify-center">
-        <div className="hidden md:block">
+        <div className={styles.customHide}>
           <img
-            className="h-72 w-full md:h-full md:w-48"
+            className="h-72 w-full md:w-48"
             src="./contact-us.jpg"
             alt="Contact Us"
           />
         </div>
-        <div>
+        {/* <div> */}
+        <div className={styles.flexCenter}>
           <Email showModal={setShowModal} custName={setCustName} />
         </div>
       </div>

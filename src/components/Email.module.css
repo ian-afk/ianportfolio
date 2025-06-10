@@ -1,0 +1,13 @@
+.centerForm {
+  display: flex;
+}
+
+.hideLabel {
+  display: block;
+}
+
+@media (max-width: 999px) {
+  .hideLabel {
+    display: none;
+  }
+}
