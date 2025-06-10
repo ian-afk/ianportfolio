@@ -6,7 +6,6 @@ import styles from "./About.module.css";
 export default function About() {
   const [showMore, setShowMore] = useState(false);
   const [showMore2, setShowMore2] = useState(false);
-  const [showed, setShowed] = useState<number | null>(null);
   const about = [
     `Web Developer/Software Developer with four years of experience in
     Software Development specializing in Software Application, Requirements Gathering, Design Thinking, User Interface Design, Testing, Development, Deployment, Data Reporting, and
@@ -20,12 +19,10 @@ export default function About() {
 
   const handleShowMore = (index: number) => {
     if (index === 0) {
-      setShowed(0);
       setShowMore(!showMore);
     }
 
     if (index === 1) {
-      setShowed(1);
       setShowMore2(!showMore2);
     }
   };
